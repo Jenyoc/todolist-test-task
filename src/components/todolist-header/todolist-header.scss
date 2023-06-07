@@ -1,0 +1,23 @@
+@import "src/modules";
+
+.todolist-header {
+  @include media-breakpoint-down(md) {
+    height: auto;
+
+    &-completed-button.ant-btn {
+      margin-left: 8px;
+
+      &.invisible {
+        display: none;
+      }
+    }
+  }
+
+  .edit-buttons-container {
+    width: 320px;
+
+    @include media-breakpoint-up(md) {
+      width: 260px;
+    }
+  }
+}

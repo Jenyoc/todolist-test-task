@@ -1,0 +1,13 @@
+.search-input {
+  width: 300px;
+
+  .ant-select {
+    &-selector {
+      border-color: white !important;
+    }
+
+    &-selection-item {
+      color: white !important;
+    }
+  }
+}

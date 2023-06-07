@@ -1,0 +1,11 @@
+.todolist-main {
+  height: 100vh;
+
+  // override library styles
+  .ant-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none !important;
+  }
+}

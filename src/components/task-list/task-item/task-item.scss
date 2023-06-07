@@ -1,0 +1,42 @@
+@import "src/modules";
+
+.task {
+  min-height: 75px;
+  transition: .3s;
+  cursor: pointer;
+  overflow: hidden;
+
+  &-created {
+    font-size: .7rem;
+  }
+
+  &.drop-area {
+    background: white;
+    position: relative;
+
+    &::before {
+      content: "Drop Here";
+      color: $gray-500;
+      font-size: 1rem;
+      text-transform: uppercase;
+      width: 100%;
+      height: 100%;
+      border: 2px dashed $gray-500;
+      border-radius: 3px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+    }
+
+    span {
+      display: none;
+    }
+
+    p {
+      margin-left: 1em;
+    }
+  }
+}

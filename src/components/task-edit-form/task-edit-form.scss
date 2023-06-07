@@ -1,0 +1,15 @@
+.task-edit-form {
+  .addition-text-input {
+    flex: max-content;
+  }
+
+  .main-text {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+  }
+
+  .status-text {
+    flex: max-content;
+  }
+}

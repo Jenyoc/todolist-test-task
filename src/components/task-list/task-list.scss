@@ -1,0 +1,21 @@
+@import 'src/modules.scss';
+
+.task-list {
+  @include media-breakpoint-only(md) {
+    // override sidebar size for tablet resolutions
+    min-width: 250px !important;
+    max-width: 250px !important;
+  }
+
+  .ant-descriptions-item-label {
+    text-align: center;
+  }
+}
+
+.spring-list {
+  width: 100% !important;
+
+  .spring-item {
+    width: 100%;
+  }
+}
